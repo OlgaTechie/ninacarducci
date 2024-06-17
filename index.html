@@ -9,15 +9,15 @@
 	<!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Nina Carducci - Photographe">
     <meta property="og:description" content="Découvrez le portfolio et les services de Nina Carducci, photographe professionnelle. À travers mes photos, je capture vos moments les plus précieux et les rends immortels.">
-    <meta property="og:image" content="http://127.0.0.1:5500/assets/images_webp/photographer-portrait.webp">
-    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:image" content="./assets/images_new/photographer-portrait-480w.webp">
+    <meta property="og:url" content="/index.html">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nina Carducci - Photographe">
     <meta name="twitter:description" content="Découvrez le portfolio et les services de Nina Carducci, photographe professionnelle. À travers mes photos, je capture vos moments les plus précieux et les rends immortels.">
-    <meta name="twitter:image" content="http://127.0.0.1:5500/assets/images_webp/photographer-portrait.webp">
+    <meta name="twitter:image" content="./assets/images_new/photographer-portrait-480w.webp">
 	
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
@@ -39,7 +39,12 @@
 					<li><a href="#gallery">Galerie</a></li>
 					<li><a href="#services">Service</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images_finales/instagram-logo.webp" alt="Instagram de Nina Carducci"></a></li>
+					<li>
+						<a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank">
+							<img src="./assets/images_new/instagram-logo.png" 
+								alt="Instagram de Nina Carducci">
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -51,13 +56,46 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images_finales/Slider/man-crossing-crosswalk.webp" class="d-block w-100" alt="Homme traversant un passage piéton">
+					<img  
+						srcset="
+							./assets/images_new/slider/man-crossing-crosswalk-320w.webp 320w,
+							./assets/images_new/slider/man-crossing-crosswalk-480w.webp 480w,
+							./assets/images_new/slider/man-crossing-crosswalk-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						src="./assets/images_new/slider/man-crossing-crosswalk-800w.webp" 
+						class="d-block w-100"
+						alt="Homme traversant un passage piéton">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images_finales/Slider/sports-fans-during-match.webp" class="d-block w-100" alt="Supporters pendant un match">
+					<img 
+						srcset="
+							./assets/images_new/slider/sports-fans-during-match-320w.webp 320w,
+							./assets/images_new/slider/sports-fans-during-match-480w.webp 480w,
+							./assets/images_new/slider/sports-fans-during-match-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						src="./assets/images_new/slider/sports-fans-during-match-800w.webp" 
+						class="d-block w-100" 
+						alt="Supporters pendant un match">
 				</div>
 				<div class="carousel-item">
-					<img src="./assets/images_finales/Slider/wedding-couple-with-guests.webp" class="d-block w-100" alt="Couple de mariés avec des invités">
+					<img 
+						srcset="
+							./assets/images_new/slider/wedding-couple-with-guests-320w.webp 320w,
+							./assets/images_new/slider/wedding-couple-with-guests-480w.webp 480w,
+							./assets/images_new/slider/wedding-couple-with-guests-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						src="./assets/images_new/slider/wedding-couple-with-guests-800w.webp" 
+						class="d-block w-100" 
+						alt="Couple de mariés avec des invités">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -73,7 +111,17 @@
 	<main>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images_finales/photographer-portrait.webp" alt="Portrait de la photographe Nina Carducci">
+				<img 
+					srcset="
+						./assets/images_new/photographer-portrait-320w.webp 320w,
+						./assets/images_new/photographer-portrait-480w.webp 480w,
+						./assets/images_new/photographer-portrait-800w.webp"
+					sizes="(max-width: 320px) 280px, 
+						(max-width: 480px) 440px,
+						(max-width: 800px) 760px,
+						800px"
+					src="./assets/images_new/photographer-portrait-480w.webp" 
+					alt="Portrait de la photographe Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -86,15 +134,114 @@
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images_finales/Gallery/concerts/concert-crowd-arms-raised-stage-band.webp" alt="Foule de concert avec les bras levés devant la scène"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images_finales/Gallery/entreprise/portrait-of-ali-morshedlou.webp" alt="Portrait d'Ali Morshedlou"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images_finales/Gallery/entreprise/women-in-office-jason-goodman.webp" alt="Femmes dans un bureau"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images_finales/Gallery/mariage/wedding-couple-arms.webp" alt="Bras d'un couple de mariés"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images_finales/Gallery/portraits/ade-tunji-man-portrait.webp" alt="Portrait d'un homme nommé Ade Tunji"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images_finales/Gallery/mariage/newlywed-couple-wedding.webp" alt="Couple de nouveaux mariés lors de leur mariage"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images_finales/Gallery/portraits/nino-van-woman-portrait.webp" alt="Portrait d'une femme nommée Nino Van"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images_finales/Gallery/concerts/singing-austin-neill-on-stage.webp" alt="Austin Neill chantant sur scène lors d'un concert"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images_finales/Gallery/entreprise/mateus-campos-felipe-woman-office-laptop.webp" alt="Femme travaillant sur un ordinateur portable dans un bureau"/>
+					<img data-gallery-tag="Concert"
+						srcset="
+							./assets/images_new/gallery/concerts/concert-crowd-arms-raised-stage-band-320w.webp 320w,
+							./assets/images_new/gallery/concerts/concert-crowd-arms-raised-stage-band-480w.webp 480w,
+							./assets/images_new/gallery/concerts/concert-crowd-arms-raised-stage-band-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px" 
+						class="gallery-item" 
+						src="./assets/images_new/gallery/concerts/concert-crowd-arms-raised-stage-band-480w.webp"
+						alt="Foule de concert avec les bras levés devant la scène"/>
+					<img data-gallery-tag="Entreprises"
+						srcset="
+							./assets/images_new/gallery/entreprise/portrait-of-ali-morshedlou-320w.webp 320w,
+							./assets/images_new/gallery/entreprise/portrait-of-ali-morshedlou-480w.webp 480w,
+							./assets/images_new/gallery/entreprise/portrait-of-ali-morshedlou-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"  
+						class="gallery-item" 
+						src="./assets/images_new/gallery/entreprise/portrait-of-ali-morshedlou-480w.webp" 
+						alt="Portrait d'Ali Morshedlou"/>
+					<img data-gallery-tag="Entreprises"
+						srcset="
+							./assets/images_new/gallery/entreprise/women-in-office-jason-goodman-320w.webp 320w,
+							./assets/images_new/gallery/entreprise/women-in-office-jason-goodman-480w.webp 480w,
+							./assets/images_new/gallery/entreprise/women-in-office-jason-goodman-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"   
+						class="gallery-item" 
+						src="./assets/images_new/gallery/entreprise/women-in-office-jason-goodman-480w.webp" 
+						alt="Femmes dans un bureau"/>
+					<img data-gallery-tag="Mariages" 
+						srcset="
+							./assets/images_new/gallery/mariage/wedding-couple-arms-320w.webp 320w,
+							./assets/images_new/gallery/mariage/wedding-couple-arms-480w.webp 480w,
+							./assets/images_new/gallery/mariage/wedding-couple-arms-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px" 
+						class="gallery-item" 
+						src="./assets/images_new/gallery/mariage/wedding-couple-arms-480w.webp" 
+						alt="Bras d'un couple de mariés"/>
+					<img data-gallery-tag="Portrait"
+						srcset="
+							./assets/images_new/gallery/portraits/ade-tunji-man-portrait-320w.webp 320w,
+							./assets/images_new/gallery/portraits/ade-tunji-man-portrait-480w.webp 480w,
+							./assets/images_new/gallery/portraits/ade-tunji-man-portrait-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"  
+						class="gallery-item" 
+						src="./assets/images_new/gallery/portraits/ade-tunji-man-portrait-480w.webp" 
+						alt="Portrait d'un homme nommé Ade Tunji"/>
+					<img data-gallery-tag="Mariages" 
+						srcset="
+							./assets/images_new/gallery/mariage/newlywed-couple-wedding-320w.webp 320w,
+							./assets/images_new/gallery/mariage/newlywed-couple-wedding-480w.webp 480w,
+							./assets/images_new/gallery/mariage/newlywed-couple-wedding-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"   
+						class="gallery-item" 
+						src="./assets/images_new/gallery/mariage/newlywed-couple-wedding-480w.webp" 
+						alt="Couple de nouveaux mariés lors de leur mariage"/>
+					<img data-gallery-tag="Portrait" 
+						srcset="
+							./assets/images_new/gallery/portraits/nino-van-woman-portrait-320w.webp 320w,
+							./assets/images_new/gallery/portraits/nino-van-woman-portrait-480w.webp 480w,
+							./assets/images_new/gallery/portraits/nino-van-woman-portrait-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"   
+						class="gallery-item" 
+						src="./assets/images_new/gallery/portraits/nino-van-woman-portrait-480w.webp" 
+						alt="Portrait d'une femme nommée Nino Van"/>
+					<img data-gallery-tag="Concert" 
+						srcset="
+							./assets/images_new/gallery/concerts/singing-austin-neill-on-stage-320w.webp 320w,
+							./assets/images_new/gallery/concerts/singing-austin-neill-on-stage-480w.webp 480w,
+							./assets/images_new/gallery/concerts/singing-austin-neill-on-stage-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						class="gallery-item" 
+						src="./assets/images_new/gallery/concerts/singing-austin-neill-on-stage-480w.webp" 
+						alt="Austin Neill chantant sur scène lors d'un concert"/>
+					<img data-gallery-tag="Entreprises" 
+						srcset="
+							./assets/images_new/gallery/entreprise/mateus-campos-felipe-woman-office-laptop-320ww.webp 320w,
+							./assets/images_new/gallery/entreprise/mateus-campos-felipe-woman-office-laptop-480ww.webp 480w,
+							./assets/images_new/gallery/entreprise/mateus-campos-felipe-woman-office-laptop-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						class="gallery-item" 
+						src="./assets/images_new/gallery/entreprise/mateus-campos-felipe-woman-office-laptop-480w.webp" 
+						alt="Femme travaillant sur un ordinateur portable dans un bureau"/>
 				</div>
 			</div>
 			<div class="quote">
@@ -186,11 +333,20 @@
 				</div>
 				
 				<div class="picture right">
-					<img src="./assets/images_finales/camera-photo.webp" alt="Appareil photo">
+					<img 
+						srcset="
+							./assets/images_new/camera-photo-320w.webp 320w,
+							./assets/images_new/camera-photo-480w.webp 480w,
+							./assets/images_new/camera-photo-800w.webp 800w"
+						sizes="(max-width: 320px) 280px, 
+							(max-width: 480px) 440px,
+							(max-width: 800px) 760px,
+							800px"
+						src="./assets/images_new/camera-photo-480w.webp" 
+						alt="Appareil photo">
 				</div>
 			</div>
 		</div>
-		
 	</footer>
 </body>
 </html>
